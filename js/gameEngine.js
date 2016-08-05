@@ -620,7 +620,7 @@ this.current_map.height_p = this.current_map.height * this.tile_size;
 this.player.loc.x = map.player.x * this.tile_size || 0;
 this.player.loc.y = map.player.y * this.tile_size || 0;
 this.player.colour = map.player.colour || '#000';
-this.player.img.src ="../img/skate.png";
+this.player.img.src ="img/skate.png";
 this.key.left  = false;
 this.key.up    = false;
 this.key.right = false;
@@ -700,9 +700,9 @@ Clarity.prototype.move_player = function () {
     var tY = this.player.loc.y + this.player.vel.y;
 
     if (this.player.vel.x > 0)
-        this.player.img.src = "../img/skate.png";
+        this.player.img.src = "img/skate.png";
     else if (this.player.vel.x < 0)
-        this.player.img.src = "../img/skate-left.png";
+        this.player.img.src = "img/skate-left.png";
 
     var offset = Math.round((this.tile_size / 2) - 1);
 
