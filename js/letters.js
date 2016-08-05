@@ -1,15 +1,14 @@
 var fullTextArray = new Array(5);
 
 function generateText(){
-	
+
 	var inputText = document.getElementById("textInput").value
 	var text = inputText.toUpperCase();
-	
-	
+
 	for (var i = 0; i < 5; i++) {
 		fullTextArray[i] = new Array(text.length*5);
 	}
-	
+
 	fullTextArray = lettersToArray(text,fullTextArray);
 
 	document.getElementById("info").innerHTML = fullTextArray;
@@ -17,7 +16,7 @@ function generateText(){
 
 var lettersToArray = function (text,fullTextArray) {
 	for (var i = 0; i < text.length; i++) {
-		var ltr = text[i];	
+		var ltr = text[i];
 		var startPos = i * 5;
 		var bigLetterArray = getArray(ltr);
 
@@ -25,7 +24,7 @@ var lettersToArray = function (text,fullTextArray) {
 			for (var col = 0; col < 5; col++) {
 				fullTextArray[row][col + startPos] = bigLetterArray[row][col];
 			}
-		}	
+		}
 	}
 
 	return fullTextArray;

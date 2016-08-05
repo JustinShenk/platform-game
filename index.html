@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Happy Birthday Mom!</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/gameEngine.css">
-
-
+    <title>Happy Birthday Mom!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/gameEngine.css">
 </head>
+
 <body data-root="http://dreamb.org/mom/">
-	<div class="container">
-		<div class="row">
-			<div id="canvasClass">
-				<canvas id="canvas"></canvas>
-			</div>
-			<p>
-				Use the left, right and up arrow keys to move.
-			</p>
-			<p class="info" id ="info">
-				<!-- The map data is fully customisable and scriptable (all contained within the "map" variable). See the comments in <!-- the code for instructions. --> -->
-			</p>
+    <div class="container">
+        <div class="row">
+            <div id="canvasClass">
+                <canvas id="canvas"></canvas>
+            </div>
+            <p>
+                Use the left, right and up arrow keys to move.
+            </p>
+            <p class="info" id="info">
+                <!-- The map data is fully customisable and scriptable (all contained within the "map" variable). See the comments in <!-- the code for instructions. -->-->
+            </p>
+            <p>
+                <input type="hidden" class="name" id="textInput" placeholder="Enter your name">
+                <!-- <button type="hidden" onclick="" type="submit">Submit</button> -->
+            </p>
+        </div>
+    </div>
+    <!-- <a target="_blank" href="http://github.com/dissimulate/Clarity">View on GitHub</a> -->
+    <script src="js/letters.js"></script>
+    <script src="js/gameEngine.js"></script>
+    <script type="text/javascript">
+    // function generateText() {
+    //  var text = document.getElementById("text");
 
-			<p>	<input type="hidden" class="name" id="textInput" placeholder="Enter your name">
-				<!-- <button type="hidden" onclick="" type="submit">Submit</button> -->
-			</p>
-		</div>
-	</div>
-	<!-- <a target="_blank" href="http://github.com/dissimulate/Clarity">View on GitHub</a> -->
-	<!-- <script src="js/letters.js"></script> -->
-	<script src="js/gameEngine.js"></script>
-	<script type="text/javascript">
-		// function generateText() {
-		// 	var text = document.getElementById("text");
+    //  var arrayZ = [
+    //  [1,2,2,2,2],
+    //  [1,1,1,2,1],
+    //  [1,1,2,1,1],
+    //  [1,2,1,1,1],
+    //  [1,2,2,2,2]
+    //  ];
 
-		// 	var arrayZ = [
-		// 	[1,2,2,2,2],
-		// 	[1,1,1,2,1],
-		// 	[1,1,2,1,1],
-		// 	[1,2,1,1,1],
-		// 	[1,2,2,2,2]
-		// 	];
-
-		// 	document.getElementById("info").innerHTML = arrayZ;
-		// }
-	</script>
-
+    //  document.getElementById("info").innerHTML = arrayZ;
+    // }
+    </script>
 </body>
+
 </html>
