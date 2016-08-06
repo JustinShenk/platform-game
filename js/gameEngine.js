@@ -290,7 +290,7 @@ var map = {
 
     /*
 
-    Key vairables:
+    Key variables:
 
     id       [required] - an integer that corresponds with a tile in the data array.
     colour   [required] - any javascript compatible colour variable.
@@ -581,6 +581,7 @@ Clarity.prototype.load_map = function(map) {
         for (var i = 0; i < fullTextArray.length; i++) {
             for (var j = 0; j < fullTextArray[0].length; j++) {
                 data[i + 22][j + 2] = fullTextArray[i][j];
+                // Check this outputs to data file
             }
         }
     };

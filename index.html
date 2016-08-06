@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/gameEngine.css">
 </head>
 
-<body data-root="http://dreamb.org/mom/">
+<body data-root="/">
     <div class="container">
         <div class="row">
             <div id="canvasClass">
@@ -16,12 +16,17 @@
             <p>
                 Use the left, right and up arrow keys to move.
             </p>
-            <p class="info" id="info">
-                <!-- The map data is fully customisable and scriptable (all contained within the "map" variable). See the comments in <!-- the code for instructions. -->-->
+            <p id="info">
+                <!-- The map data is fully customisable and scriptable (all
+                <!-- contained within the "map" variable). See the comments in
+                <!-- the code for instructions. -->
+            </p>
+            <p id="output">
+
             </p>
             <p>
-                <input type="hidden" class="name" id="textInput" placeholder="Enter your name">
-                <!-- <button type="hidden" onclick="" type="submit">Submit</button> -->
+                <input class="name" id="textInput" placeholder="Enter your name">
+                <button onclick="generateText()" type="submit">Submit</button>
             </p>
         </div>
     </div>
@@ -29,19 +34,20 @@
     <script src="js/letters.js"></script>
     <script src="js/gameEngine.js"></script>
     <script type="text/javascript">
-    // function generateText() {
-    //  var text = document.getElementById("text");
 
-    //  var arrayZ = [
-    //  [1,2,2,2,2],
-    //  [1,1,1,2,1],
-    //  [1,1,2,1,1],
-    //  [1,2,1,1,1],
-    //  [1,2,2,2,2]
-    //  ];
 
-    //  document.getElementById("info").innerHTML = arrayZ;
-    // }
+     // var text = document.getElementById("text");
+
+     // var arrayZ = [
+     // [1,2,2,2,2],
+     // [1,1,1,2,1],
+     // [1,1,2,1,1],
+     // [1,2,1,1,1],
+     // [1,2,2,2,2]
+     // ];
+
+     // document.getElementById("info").innerHTML = arrayZ;
+
     </script>
 </body>
 
